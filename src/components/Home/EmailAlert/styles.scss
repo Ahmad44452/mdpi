@@ -1,0 +1,46 @@
+.emailalert {
+  background: #f1fffa;
+  border: 1px solid rgba(0, 124, 127, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+
+  &__heading {
+    color: #007c7f;
+    font-size: 2rem;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 1.3rem;
+    margin: 0.4rem 0 1.4rem 0;
+  }
+
+  &__form {
+    display: flex;
+
+    &--input {
+      width: auto;
+      flex-grow: 1;
+      background: #f1fffa;
+      border: 1px solid #d9f2ee;
+      border-radius: 7px;
+      padding: 1rem;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(0, 124, 127, 0.3);
+      }
+    }
+
+    &--button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 0 1rem;
+      color: #fff;
+      background-color: #007c7f;
+      border-radius: 7px;
+      margin-left: 1rem;
+    }
+  }
+}

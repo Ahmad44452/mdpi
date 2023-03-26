@@ -1,0 +1,13 @@
+.home {
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: minmax(25rem, 20%) auto minmax(31rem, 20%);
+  gap: 1rem;
+
+  &__right {
+    &--banner {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+}

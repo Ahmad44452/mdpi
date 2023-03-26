@@ -1,0 +1,65 @@
+.socialsbox {
+  background: #f1fffa;
+  border: 1px solid rgba(0, 124, 127, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__img {
+    align-self: flex-start;
+  }
+
+  &__button {
+    text-align: center;
+    padding: 0.6rem 0;
+    border: none;
+    outline: none;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 100%;
+
+    span {
+      font-weight: 700;
+    }
+
+    &--solid {
+      background: #007c7f;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    &--shallow {
+      background: transparent;
+      border: 1px solid #94a1a1;
+      color: #007c7f;
+      border-radius: 7px;
+    }
+  }
+
+  &__networks {
+    // text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.5rem;
+
+    &--link {
+      box-sizing: content-box;
+      background-color: #007c7f;
+      padding: 0.5rem;
+      border-radius: 100%;
+      line-height: 0;
+
+      svg {
+        line-height: 0;
+        color: #f1fffa;
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+    }
+  }
+}

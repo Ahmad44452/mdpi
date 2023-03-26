@@ -1,0 +1,124 @@
+.footer {
+  &__citation {
+    background-color: #f8fbff;
+    color: #213b5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    font-size: 1.3rem;
+
+    &--tags {
+      &-item {
+        background-color: #f0f7ff;
+        padding: 0.5rem 2rem;
+        color: #213b5e;
+        border-radius: 5px;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__main {
+    background-color: #f0f7ff;
+    padding: 10rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 15rem;
+  }
+
+  &__newsletter {
+    // width: min-content;
+    display: flex;
+    flex-direction: column;
+
+    &--img {
+      align-self: flex-start;
+    }
+
+    &--text {
+      width: 30ch;
+      font-size: 1.4rem;
+      color: #223b5e;
+      text-align: justify;
+      text-align-last: left;
+      margin: 1rem 0 1.3rem 0;
+    }
+
+    &--input {
+      width: 100%;
+      position: relative;
+
+      &-icon {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        // z-index: 100;
+        line-height: 0;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background: #ffffff;
+        border-radius: 7px;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 3rem;
+        &::placeholder {
+          color: #d2d2d2;
+        }
+      }
+    }
+
+    &--btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 1rem 0;
+      margin-top: 1rem;
+      background: linear-gradient(102.17deg, #385172 16.09%, #223b5e 79.97%);
+      border-radius: 7px;
+      color: #fff;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    &--group {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        font-weight: 700;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        color: #223b5e;
+        margin-bottom: 1.5rem;
+      }
+
+      &-item:link,
+      &-item:visited {
+        text-decoration: none;
+        color: #223b5e;
+        font-size: 1.4rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
