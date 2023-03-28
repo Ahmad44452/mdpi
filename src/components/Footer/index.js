@@ -15,13 +15,13 @@ const Footer = () => {
 
       <div className='footer__main'>
         <div className='footer__newsletter'>
-          <img src='/images/logo.png' className='footer__newsletter--img' />
+          <img src='/images/logo.png' className='footer__newsletter--img' alt="MDPI Logo" />
           <p className='footer__newsletter--text'>Subscribe to receive issue release notifications and newsletters from MDPI journals</p>
           <div className='footer__newsletter--input'>
             <span className='footer__newsletter--input-icon'>
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.9188 7.37598L11.2161 10.3868C10.5165 10.9418 9.5322 10.9418 8.83262 10.3868L5.09863 7.37598" stroke="#D2D2D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.091 17.5C16.6255 17.507 18.3337 15.4246 18.3337 12.8653V7.14168C18.3337 4.58235 16.6255 2.5 14.091 2.5H5.90961C3.37515 2.5 1.66699 4.58235 1.66699 7.14168V12.8653C1.66699 15.4246 3.37515 17.507 5.90961 17.5H14.091Z" stroke="#D2D2D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.9188 7.37598L11.2161 10.3868C10.5165 10.9418 9.5322 10.9418 8.83262 10.3868L5.09863 7.37598" stroke="#D2D2D2" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M14.091 17.5C16.6255 17.507 18.3337 15.4246 18.3337 12.8653V7.14168C18.3337 4.58235 16.6255 2.5 14.091 2.5H5.90961C3.37515 2.5 1.66699 4.58235 1.66699 7.14168V12.8653C1.66699 15.4246 3.37515 17.507 5.90961 17.5H14.091Z" stroke="#D2D2D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
 

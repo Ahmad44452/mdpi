@@ -28,6 +28,110 @@ const menuProps = {
   onClick: handleMenuClick,
 };
 
+const volumesData = [
+  {
+    id: 0,
+    name: 'Vol. 1 (2001)',
+    link: '/'
+  },
+  {
+    id: 1,
+    name: 'Vol. 2 (2002)',
+    link: '/'
+  },
+  {
+    id: 2,
+    name: 'Vol. 3 (2003)',
+    link: '/'
+  },
+  {
+    id: 3,
+    name: 'Vol. 4 (2004)',
+    link: '/'
+  },
+  {
+    id: 4,
+    name: 'Vol. 5 (2005)',
+    link: '/'
+  },
+  {
+    id: 5,
+    name: 'Vol. 6 (2006)',
+    link: '/'
+  },
+  {
+    id: 6,
+    name: 'Vol. 7 (2007)',
+    link: '/'
+  },
+  {
+    id: 7,
+    name: 'Vol. 8 (2008)',
+    link: '/'
+  },
+  {
+    id: 8,
+    name: 'Vol. 9 (2009)',
+    link: '/'
+  },
+  {
+    id: 9,
+    name: 'Vol. 10 (2010)',
+    link: '/'
+  },
+  {
+    id: 10,
+    name: 'Vol. 11 (2011)',
+    link: '/'
+  },
+  {
+    id: 11,
+    name: 'Vol. 12 (2012)',
+    link: '/'
+  },
+  {
+    id: 12,
+    name: 'Vol. 13 (2013)',
+    link: '/'
+  },
+  {
+    id: 13,
+    name: 'Vol. 14 (2014)',
+    link: '/'
+  },
+  {
+    id: 14,
+    name: 'Vol. 15 (2015)',
+    link: '/'
+  },
+  {
+    id: 15,
+    name: 'Vol. 16 (2016)',
+    link: '/'
+  },
+  {
+    id: 16,
+    name: 'Vol. 17 (2017)',
+    link: '/'
+  },
+  {
+    id: 17,
+    name: 'Vol. 18 (2018)',
+    link: '/'
+  },
+  {
+    id: 18,
+    name: 'Vol. 19 (2019)',
+    link: '/'
+  },
+  {
+    id: 19,
+    name: 'Vol. 20 (2020)',
+    link: '/'
+  }
+
+]
+
 const JournalBrowser = () => {
   return (
     <div className="journalbrowser">
@@ -86,28 +190,9 @@ const JournalBrowser = () => {
 
 
       <div className='journalbrowser__volumes'>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 1 (2001)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 2 (2002)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 3 (2003)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 4 (2004)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 5 (2005)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 6 (2006)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 7 (2007)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 8 (2008)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 9 (2009)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 10 (2010)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 11 (2011)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 12 (2012)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 13 (2013)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 14 (2014)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 15 (2015)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 16 (2016)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 17 (2017)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 18 (2018)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 19 (2019)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 20 (2020)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 21 (2021)</Link>
-        <Link to='/' className='journalbrowser__volumes--link'>Vol. 22 (2022)</Link>
+        {
+          volumesData.map(item => <Link to={item.link} key={item.id} className='journalbrowser__volumes--link'>{item.name}</Link>)
+        }
       </div>
     </div>
   )

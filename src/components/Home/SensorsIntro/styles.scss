@@ -55,6 +55,14 @@
         background-color: #d9e9ff;
       }
 
+      &-clickable {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       &-icon {
         line-height: 0;
         color: rgba(0, 124, 127, 1);

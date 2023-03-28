@@ -11,8 +11,31 @@
   }
 
   &__links {
+    &--dropdown {
+      border: none;
+      background-color: transparent;
+      text-transform: uppercase;
+      font-family: "Satoshi", sans-serif;
+
+      div {
+        display: none;
+      }
+
+      &:hover {
+        color: #000 !important;
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      &:active {
+        border: none;
+      }
+    }
+
     &--link:link,
     &--link:visited {
+      cursor: pointer;
       text-decoration: none;
       color: #000;
       text-transform: uppercase;
@@ -74,6 +97,7 @@
       }
 
       &-icon {
+        cursor: pointer;
         svg {
           width: 2rem;
           height: 2rem;

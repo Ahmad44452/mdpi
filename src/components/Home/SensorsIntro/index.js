@@ -41,7 +41,7 @@ const SensorsIntro = () => {
       </div>
 
       <div className='sensorsintro__additional'>
-        <div className='sensorsintro__additional--item'>
+        <div className='sensorsintro__additional--item sensorsintro__additional--item-clickable'>
           <span className='sensorsintro__additional--item-icon'>
             <HiMenuAlt2 />
           </span>
@@ -50,7 +50,7 @@ const SensorsIntro = () => {
           </span>
         </div>
 
-        <div className='sensorsintro__additional--item'>
+        <div className='sensorsintro__additional--item sensorsintro__additional--item-clickable'>
           <span className='sensorsintro__additional--item-icon'>
             <HiOutlineDownload />
           </span>

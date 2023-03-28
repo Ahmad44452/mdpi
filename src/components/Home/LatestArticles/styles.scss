@@ -60,6 +60,7 @@
 
     &--icon {
       line-height: 0;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-right: 0.5rem;
@@ -96,7 +97,7 @@
     }
 
     &--info {
-      color: #cecece;
+      color: rgba(0, 0, 0, 0.7);
       font-size: 1.1rem;
       margin-bottom: 0.4rem;
     }
@@ -106,8 +107,8 @@
     font-size: 1.5rem;
     padding: 1rem 0;
 
-    &--link:link,
-    &--link:visited {
+    &--link {
+      cursor: pointer;
       margin-left: 4px;
       color: #385172;
       font-weight: 700;
